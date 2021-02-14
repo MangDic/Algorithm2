@@ -29,8 +29,8 @@ public class OpenChatting {
         }
         answer = new String[index];
         int cnt = 0;
-        for(String s : record) {
-            String[] temp = s.split(" ");
+        for(String user : record) {
+            String[] temp = user.split(" ");
             if(temp[0].equals("Enter")) {
                 answer[cnt] = userCheck.get(temp[1]) + "님이 들어왔습니다.";
             }
